@@ -7,4 +7,4 @@
  * @Description: 
  * @FilePath: \muyi.dev\docs\logs\index.md
 -->
-# 前端开发周报
+# 前端开发周刊
