@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-07-07 21:34:17
+ * @LastEditTime: 2022-07-08 09:22:19
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -16,7 +16,7 @@ export default {
         siteTitle: '前端组装工人',
         nav: [
             { text: '首页', link: '/' },
-            { text: '前端开发周刊', link: '/logs/', activeMatch: '/logs/' },
+            { text: '前端开发周报', link: '/logs/', activeMatch: '/logs/' },
             { text: 'ezAdmin3', link: '/ezadmin3/', activeMatch: '/ezadmin3/' }
         ],
         sidebar: {
@@ -25,7 +25,12 @@ export default {
                     text: '2022 - 拥抱开源!',
                     collapsible: true,
                     collapsed: false,
-                    items: [{ text: '07-08 #001 #ezAdmin3', link: '/logs/2022-07-08' }]
+                    items: [
+                        {
+                            text: '07-08 #001 #ezAdmin3',
+                            link: '/logs/2022-07-08'
+                        }
+                    ]
                 }
             ],
             '/ezadmin3/': [
