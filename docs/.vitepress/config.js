@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-07-08 09:22:19
+ * @LastEditTime: 2022-07-14 15:03:05
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -26,6 +26,10 @@ export default {
                     collapsible: true,
                     collapsed: false,
                     items: [
+                        {
+                            text: '07-15 #002 #ezAdmin3',
+                            link: '/logs/2022-07-15'
+                        },
                         {
                             text: '07-08 #001 #ezAdmin3',
                             link: '/logs/2022-07-08'
