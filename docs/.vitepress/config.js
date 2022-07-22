@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-07-14 15:03:05
+ * @LastEditTime: 2022-07-22 17:05:30
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -17,7 +17,8 @@ export default {
         nav: [
             { text: '首页', link: '/' },
             { text: '前端开发周报', link: '/logs/', activeMatch: '/logs/' },
-            { text: 'ezAdmin3', link: '/ezadmin3/', activeMatch: '/ezadmin3/' }
+            { text: 'ezAdmin3', link: '/ezadmin3/', activeMatch: '/ezadmin3/' },
+            { text: 'ezMaths', link: '/ezmaths/', activeMatch: '/ezmaths/' }
         ],
         sidebar: {
             '/logs/': [
@@ -27,11 +28,15 @@ export default {
                     collapsed: false,
                     items: [
                         {
-                            text: '07-15 #002 #ezAdmin3',
+                            text: '07-22 #003',
+                            link: '/logs/2022-07-22'
+                        },
+                        {
+                            text: '07-15 #002',
                             link: '/logs/2022-07-15'
                         },
                         {
-                            text: '07-08 #001 #ezAdmin3',
+                            text: '07-08 #001',
                             link: '/logs/2022-07-08'
                         }
                     ]
@@ -62,6 +67,13 @@ export default {
                     text: '更新记录',
                     items: []
                 }
+            ],
+            '/ezmaths/': [
+                                        {
+                            text: '介绍',
+                            link: '/ezmaths/'
+                        },
+
             ]
         },
         socialLinks: [{ icon: 'github', link: 'https://github.com/nmtuan' }],
