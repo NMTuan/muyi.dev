@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-07-22 17:05:30
+ * @LastEditTime: 2022-07-22 17:16:35
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -69,11 +69,10 @@ export default {
                 }
             ],
             '/ezmaths/': [
-                                        {
-                            text: '介绍',
-                            link: '/ezmaths/'
-                        },
-
+                {
+                    text: '介绍',
+                    items: []
+                }
             ]
         },
         socialLinks: [{ icon: 'github', link: 'https://github.com/nmtuan' }],
