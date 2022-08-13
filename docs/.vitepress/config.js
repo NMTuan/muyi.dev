@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-08-13 09:30:41
+ * @LastEditTime: 2022-08-13 10:58:36
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -18,7 +18,8 @@ export default {
             { text: '首页', link: '/' },
             { text: '前端开发周报', link: '/logs/', activeMatch: '/logs/' },
             { text: 'ezAdmin3', link: '/ezadmin3/', activeMatch: '/ezadmin3/' },
-            { text: 'ezMaths', link: '/ezmaths/', activeMatch: '/ezmaths/' }
+            { text: 'ezMaths', link: '/ezmaths/', activeMatch: '/ezmaths/' },
+            { text: 'ezMaths', link: '/ezmusic/', activeMatch: '/ezmusic/' }
         ],
         sidebar: {
             '/logs/': [
