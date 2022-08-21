@@ -29,6 +29,10 @@ export default {
                     collapsed: false,
                     items: [
                         {
+                            text: '08-21 #007',
+                            link: '/logs/2022-08-21'
+                        },
+                        {
                             text: '08-13 #006',
                             link: '/logs/2022-08-13'
                         },
