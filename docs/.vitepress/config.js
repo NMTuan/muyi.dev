@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-08-27 20:29:29
+ * @LastEditTime: 2022-09-19 17:23:45
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -19,7 +19,7 @@ export default {
             { text: '前端开发周报', link: '/logs/', activeMatch: '/logs/' },
             { text: 'ezAdmin3', link: '/ezadmin3/', activeMatch: '/ezadmin3/' },
             { text: 'ezMaths', link: '/ezmaths/', activeMatch: '/ezmaths/' },
-            { text: 'ezMaths', link: '/ezmusic/', activeMatch: '/ezmusic/' }
+            { text: 'ezMusic', link: '/ezmusic/', activeMatch: '/ezmusic/' }
         ],
         sidebar: {
             '/logs/': [
@@ -93,6 +93,57 @@ export default {
                 {
                     text: '介绍',
                     items: []
+                }
+            ],
+            '/ezmusic/': [
+                {
+                    text: '介绍',
+                    // link: ''
+                    items: [
+                        {
+                            text: '背景',
+                            link: '/ezmusic/causes'
+                        },
+                        {
+                            text: '技术栈',
+                            link: '/ezmusic/stack'
+                        }
+                    ]
+                },
+                {
+                    text: '使用',
+                    items: [
+                        {
+                            text: '播放器',
+                            link: '/ezmusic/use'
+                        },
+                        {
+                            text: '数据维护',
+                            link: '/ezmusic/data_management'
+                        }
+                    ]
+                },
+                {
+                    text: '部署',
+                    items: [
+                        {
+                            text: '前端部署',
+                            link: '/ezmusic/frontend'
+                        },
+                        {
+                            text: '后端部署',
+                            link: '/ezmusic/backend'
+                        }
+                    ]
+                },
+                {
+                    text: '声明',
+                    items: [
+                        {
+                            text: '协议',
+                            link: '/ezmusic/license'
+                        }
+                    ]
                 }
             ]
         },
