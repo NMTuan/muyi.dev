@@ -2,16 +2,34 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-09-19 17:23:45
+ * @LastEditTime: 2022-09-22 11:37:12
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
  */
+
+const taskLists = require('markdown-it-task-lists')
+
 export default {
     lang: 'zh-CN',
     title: '前端组装工人',
     description: '一个前端开发程序员的点点滴滴',
     lastUpdated: true,
+    head: [
+        [
+            'script',
+            {},
+            `
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?a607e35bdad8c2e5bae1f327f3f41f19";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+            `
+        ]
+    ],
     themeConfig: {
         siteTitle: '前端组装工人',
         nav: [
@@ -97,12 +115,20 @@ export default {
             ],
             '/ezmusic/': [
                 {
-                    text: '介绍',
+                    text: 'ezMusic',
                     // link: ''
                     items: [
                         {
+                            text: '介绍',
+                            link: '/ezmusic/'
+                        },
+                        {
                             text: '背景',
                             link: '/ezmusic/causes'
+                        },
+                        {
+                            text: '功能',
+                            link: '/ezmusic/feature'
                         },
                         {
                             text: '技术栈',
@@ -114,12 +140,12 @@ export default {
                     text: '使用',
                     items: [
                         {
-                            text: '播放器',
+                            text: '上手',
                             link: '/ezmusic/use'
                         },
                         {
-                            text: '数据维护',
-                            link: '/ezmusic/data_management'
+                            text: '维护',
+                            link: '/ezmusic/management'
                         }
                     ]
                 },
@@ -127,12 +153,16 @@ export default {
                     text: '部署',
                     items: [
                         {
-                            text: '前端部署',
-                            link: '/ezmusic/frontend'
-                        },
-                        {
                             text: '后端部署',
                             link: '/ezmusic/backend'
+                        },
+                        {
+                            text: '初始化',
+                            link: '/ezmusic/init'
+                        },
+                        {
+                            text: '前端部署',
+                            link: '/ezmusic/frontend'
                         }
                     ]
                 },
@@ -140,8 +170,12 @@ export default {
                     text: '声明',
                     items: [
                         {
-                            text: '协议',
-                            link: '/ezmusic/license'
+                            text: '开源',
+                            link: '/ezmusic/open_source'
+                        },
+                        {
+                            text: '感谢',
+                            link: '/ezmusic/acknowledgement'
                         }
                     ]
                 }
@@ -151,6 +185,11 @@ export default {
         docFooter: {
             prev: '上一篇',
             next: '下一篇'
+        }
+    },
+    markdown: {
+        config: (md) => {
+            md.use(taskLists)
         }
     }
 }
