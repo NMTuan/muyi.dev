@@ -33,7 +33,18 @@ directus 支持多种对象存储服务，如：s3、azure、gcs 等，详见：
 在这里选择兼容 amazon S3 服务的 minIO。直接一条命令完事：
 
 ```bash
-
+docker run \
+	--name minio \
+	--restart=always \
+	-p 9000:9000 \
+	-p 9001:9001 \
+	-v path:/mnt/config \
+	-v path:/data \
+	-e minio_access_key=access_key \
+	-e minio_secret_key=secret_key \
+	-e minio_root_user=root \
+	-e minio_root_password=passwd \
+	-d minio/minio
 ```
 
 ## 数据缓存
