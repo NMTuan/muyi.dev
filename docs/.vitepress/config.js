@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-09-22 11:37:12
+ * @LastEditTime: 2022-09-23 16:28:53
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -137,19 +137,6 @@ export default {
                     ]
                 },
                 {
-                    text: '使用',
-                    items: [
-                        {
-                            text: '上手',
-                            link: '/ezmusic/use'
-                        },
-                        {
-                            text: '维护',
-                            link: '/ezmusic/management'
-                        }
-                    ]
-                },
-                {
                     text: '部署',
                     items: [
                         {
@@ -167,6 +154,19 @@ export default {
                     ]
                 },
                 {
+                    text: '使用',
+                    items: [
+                        {
+                            text: '上手',
+                            link: '/ezmusic/use'
+                        },
+                        {
+                            text: '维护',
+                            link: '/ezmusic/management'
+                        }
+                    ]
+                },
+                {
                     text: '声明',
                     items: [
                         {
@@ -176,6 +176,10 @@ export default {
                         {
                             text: '感谢',
                             link: '/ezmusic/acknowledgement'
+                        },
+                        {
+                            text: '赞赏',
+                            link: '/ezmusic/reward'
                         }
                     ]
                 }

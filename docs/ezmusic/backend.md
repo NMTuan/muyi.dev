@@ -15,7 +15,15 @@ directus 支持多种数据库，比如：sqlite，postgres，mysql，oracledb �
 这里选择使用 mariadb，同样一条命令完事：
 
 ```bash
-# todo
+docker run \
+	--name mariadb \
+	--restart=always \
+	-p 3306:3306 \
+	-v path:/var/lib/mysql \
+	-e mariadb_user=root \
+	-e mariadb_password=passwd \
+	-e mariadb_root_password=passwd \
+	-d mariadbmariadb
 ```
 
 ## 对象存储
@@ -25,7 +33,7 @@ directus 支持多种对象存储服务，如：s3、azure、gcs 等，详见：
 在这里选择兼容 amazon S3 服务的 minIO。直接一条命令完事：
 
 ```bash
-# todo
+
 ```
 
 ## 数据缓存
