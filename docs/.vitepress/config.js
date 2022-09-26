@@ -2,16 +2,34 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2022-08-27 20:29:29
+ * @LastEditTime: 2022-09-26 10:41:56
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
  */
+
+const taskLists = require('markdown-it-task-lists')
+
 export default {
     lang: 'zh-CN',
     title: '前端组装工人',
     description: '一个前端开发程序员的点点滴滴',
     lastUpdated: true,
+    head: [
+        [
+            'script',
+            {},
+            `
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?a607e35bdad8c2e5bae1f327f3f41f19";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+            `
+        ]
+    ],
     themeConfig: {
         siteTitle: '前端组装工人',
         nav: [
@@ -19,7 +37,7 @@ export default {
             { text: '前端开发周报', link: '/logs/', activeMatch: '/logs/' },
             { text: 'ezAdmin3', link: '/ezadmin3/', activeMatch: '/ezadmin3/' },
             { text: 'ezMaths', link: '/ezmaths/', activeMatch: '/ezmaths/' },
-            { text: 'ezMaths', link: '/ezmusic/', activeMatch: '/ezmusic/' }
+            { text: 'ezMusic', link: '/ezmusic/', activeMatch: '/ezmusic/' }
         ],
         sidebar: {
             '/logs/': [
@@ -28,6 +46,10 @@ export default {
                     collapsible: true,
                     collapsed: false,
                     items: [
+                        {
+                            text: '09-26 #009',
+                            link: '/logs/2022-09-26'
+                        },
                         {
                             text: '08-27 #008',
                             link: '/logs/2022-08-27'
@@ -94,12 +116,88 @@ export default {
                     text: '介绍',
                     items: []
                 }
+            ],
+            '/ezmusic/': [
+                {
+                    text: 'ezMusic',
+                    // link: ''
+                    items: [
+                        {
+                            text: '介绍',
+                            link: '/ezmusic/'
+                        },
+                        {
+                            text: '背景',
+                            link: '/ezmusic/causes'
+                        },
+                        {
+                            text: '功能',
+                            link: '/ezmusic/feature'
+                        },
+                        {
+                            text: '技术栈',
+                            link: '/ezmusic/stack'
+                        }
+                    ]
+                },
+                {
+                    text: '部署',
+                    items: [
+                        {
+                            text: '后端部署',
+                            link: '/ezmusic/backend'
+                        },
+                        {
+                            text: '初始化',
+                            link: '/ezmusic/init'
+                        },
+                        {
+                            text: '前端部署',
+                            link: '/ezmusic/frontend'
+                        }
+                    ]
+                },
+                {
+                    text: '使用',
+                    items: [
+                        {
+                            text: '上手',
+                            link: '/ezmusic/use'
+                        },
+                        {
+                            text: '维护',
+                            link: '/ezmusic/management'
+                        }
+                    ]
+                },
+                {
+                    text: '声明',
+                    items: [
+                        {
+                            text: '开源',
+                            link: '/ezmusic/open_source'
+                        },
+                        {
+                            text: '感谢',
+                            link: '/ezmusic/acknowledgement'
+                        },
+                        {
+                            text: '赞赏',
+                            link: '/ezmusic/reward'
+                        }
+                    ]
+                }
             ]
         },
         socialLinks: [{ icon: 'github', link: 'https://github.com/nmtuan' }],
         docFooter: {
             prev: '上一篇',
             next: '下一篇'
+        }
+    },
+    markdown: {
+        config: (md) => {
+            md.use(taskLists)
         }
     }
 }
