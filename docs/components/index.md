@@ -8,4 +8,16 @@
  * @FilePath: \muyi.dev\docs\components\index.md
 -->
 
-components
+# components
+
+## ezAdmin3
+
+一个基于 `Nuxt.js v3` 的admin管理平台整合方案。
+
+[GitHub](https://github.com/NMTuan/ezAdmin3)
+
+## ezAdmin
+
+一个基于 `Nuxt.js` 的admin管理平台整合方案。
+
+[GitHub](https://github.com/NMTuan/ezAdmin)

@@ -2,7 +2,7 @@
  * @Author: NMTuan
  * @Email: NMTuan@qq.com
  * @Date: 2022-07-07 16:00:58
- * @LastEditTime: 2023-01-04 19:54:42
+ * @LastEditTime: 2023-01-05 10:43:33
  * @LastEditors: NMTuan
  * @Description:
  * @FilePath: \muyi.dev\docs\.vitepress\config.js
@@ -14,7 +14,8 @@ export default {
     lang: 'zh-CN',
     title: 'muyi.dev',
     description: '一个前端开发程序员的点点滴滴',
-    lastUpdated: true,
+    // lastUpdated: true,
+    appearance: true,
     head: [
         [
             'script',
@@ -33,24 +34,23 @@ export default {
     themeConfig: {
         siteTitle: 'MuYi.dev',
         nav: [
-            {
-                text: '文档',
-                items: [
-                    { text: 'based', link: '/based/' },
-                    { text: 'components', link: '/components/' },
-                    { text: 'toys', link: '/toys/' }
-                ]
-            },
-            // { text: 'based', link: '/based/', activeMatch: '/based/' },
             // {
-            //     text: 'components',
-            //     link: '/components/',
-            //     activeMatch: '/components/'
+            //     text: '文档',
+            //     items: [
+            //         { text: 'based', link: '/based/' },
+            //         { text: 'components', link: '/components/' },
+            //         { text: 'toys', link: '/toys/' }
+            //     ]
             // },
-            // { text: 'toys', link: '/toys/', activeMatch: '/toys/' },
-            // { text: 'daily', link: '/daily/', activeMatch: '/daily/' },
-            { text: '关于', link: '/about/', activeMatch: '/about/' },
-            { text: '赞助', link: '/sponsor/', activeMatch: '/sponsor/' }
+            { text: 'based', link: '/based/', activeMatch: '/based/' },
+            {
+                text: 'components',
+                link: '/components/',
+                activeMatch: '/components/'
+            },
+            { text: 'toys', link: '/toys/', activeMatch: '/toys/' },
+            { text: 'about', link: '/about/', activeMatch: '/about/' },
+            { text: 'sponsor', link: '/sponsor/', activeMatch: '/sponsor/' }
 
             // { text: '前端开发周报', link: '/logs/', activeMatch: '/logs/' },
             // { text: 'ezAdmin3', link: '/ezadmin3/', activeMatch: '/ezadmin3/' },
@@ -59,43 +59,42 @@ export default {
         ],
         sidebar: [
             {
-                text: 'based',
                 items: [
-                    { text: '目录', link: '/based/' },
-                    { text: 'Base_vite_ie11', link: '/based/base_vite_ie11' },
-                    { text: 'Base_nuxt3', link: '/based/base_nuxt3' },
-                    {
-                        text: 'Base_vite_chrome_extension',
-                        link: '/based/base_vite_chrome_extension'
-                    }
+                    { text: 'based', link: '/based/' },
+                    { text: 'components', link: '/components/' },
+                    { text: 'toys', link: '/toys/' }
+                    // { text: 'Base_vite_ie11', link: '/based/base_vite_ie11' },
+                    // { text: 'Base_nuxt3', link: '/based/base_nuxt3' },
+                    // {
+                    //     text: 'Base_vite_chrome_extension',
+                    //     link: '/based/base_vite_chrome_extension'
+                    // }
                 ]
             },
+            // {
+            //     text: 'components',
+            //     items: [
+            //         { text: 'ezAdmin', link: '/components/ezAdmin' },
+            //         { text: 'ezAdmin3', link: '/components/ezAdmin3' }
+            //     ]
+            // },
+            // {
+            //     text: 'toys',
+            //     items: [
+            //         { text: 'sy_bookmarks', link: '/toys/sy_bookmarks' },
+            //         { text: 'ezBookmarks', link: '/toys/ezBookmarks' },
+            //         { text: 'ezBookmarks2', link: '/toys/ezBookmarks2' },
+            //         { text: 'Maths', link: '/toys/maths' },
+            //         { text: 'ezHomepage', link: '/toys/ezHomepage' },
+            //         { text: 'ezMusic', link: '/toys/ezMusic' },
+            //         { text: 'ezUI_jquery', link: '/toys/ezUI_jquery' }
+            //     ]
+            // },
             {
-                text: 'components',
+                // text: 'other',
                 items: [
-                    { text: '目录', link: '/components/' },
-                    { text: 'ezAdmin', link: '/components/ezAdmin' },
-                    { text: 'ezAdmin3', link: '/components/ezAdmin3' }
-                ]
-            },
-            {
-                text: 'toys',
-                items: [
-                    { text: '目录', link: '/toys/' },
-                    { text: 'sy_bookmarks', link: '/toys/sy_bookmarks' },
-                    { text: 'ezBookmarks', link: '/toys/ezBookmarks' },
-                    { text: 'ezBookmarks2', link: '/toys/ezBookmarks2' },
-                    { text: 'Maths', link: '/toys/maths' },
-                    { text: 'ezHomepage', link: '/toys/ezHomepage' },
-                    { text: 'ezMusic', link: '/toys/ezMusic' },
-                    { text: 'ezUI_jquery', link: '/toys/ezUI_jquery' }
-                ]
-            },
-            {
-                text: 'other',
-                items: [
-                    { text: '关于', link: '/about/' },
-                    { text: '赞助', link: '/sponsor/' }
+                    { text: 'about', link: '/about/' },
+                    { text: 'sponsor', link: '/sponsor/' }
                 ]
             }
         ],
@@ -256,7 +255,10 @@ export default {
         //     }
         // ]
         // },
-        socialLinks: [{ icon: 'github', link: 'https://github.com/nmtuan' }],
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/nmtuan' },
+            { icon: 'twitter', link: 'https://twitter.com/NMTuans' }
+        ],
         docFooter: {
             prev: '上一篇',
             next: '下一篇'

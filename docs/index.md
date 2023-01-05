@@ -29,8 +29,8 @@ features:
       title: toys - 玩具
       link: /toys/
       details: 摆弄一些小玩意,  验证一些想法.
-    - icon: 📝
-      title: daily - 日常
-      link: /daily/
-      details: 组装工人的日常记录
+    # - icon: 📝
+    #   title: daily - 日常
+    #   link: /daily/
+    #   details: 组装工人的日常记录
 ---
