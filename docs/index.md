@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-    name: 前端组装工厂
+    name: 前端组装工人
     text: ﹉﹉
     tagline: 站在巨人的肩膀，总能拼凑出一些东西
     # image:
