@@ -29,6 +29,14 @@ export default {
             s.parentNode.insertBefore(hm, s);
             })();
             `
+        ],
+        [
+            'script',
+            {
+                src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4737621804792853',
+                crossorigin: 'anonymous',
+                async: ''
+            }
         ]
     ],
     themeConfig: {
